@@ -1,0 +1,9 @@
+<h1> <%= @title %> </h1>
+<% if @campsite %>
+  Campers bunking in <%= @campsite.name %>
+<% end %>
+<% @campers.each do |camper| %>
+  <ul>
+    <l1> <%= camper.name %> </li>
+  </ul>
+<% end %>

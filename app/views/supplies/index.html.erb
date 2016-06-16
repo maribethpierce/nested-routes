@@ -1,0 +1,15 @@
+<% if @camper %>
+  Supplies Brought by <%= @camper.name %>
+  <% @supplies.each do |supply| %>
+    <ul>
+      <l1> <%= supply.name %> </li>
+    </ul>
+  <% end %>
+<% else %>
+<h1> <%= @title %> </h2>
+  <% @supplies.each do |supply| %>
+    <ul>
+      <l1> <%= supply.name %> </li>
+    </ul>
+  <% end %>
+<% end %>
